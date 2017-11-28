@@ -1,0 +1,39 @@
+body {
+	background-color: #ddd;
+}
+.container {
+	width: 800px;
+	height: 800px;
+	margin: 50px auto 0 auto;
+	border: 20px double #333;
+	box-shadow: 0 0 100px rgba(0,0,0,0.9);
+}
+.cell {
+	height: 100%;
+	float: right;
+	background-color: #5b3030;
+	background: radial-gradient(#452323, #814c4c);
+}
+.row {
+	height: 12.5%;
+}
+.row:nth-child(odd) .cell:nth-child(even),
+.row:nth-child(even) .cell:nth-child(odd) {
+	background: radial-gradient(#e6dfa0, #bbb367);
+}
+.checkers {
+	background-size: 80px;
+	margin: 7.5%;
+}
+.checkers--black {
+	background-image: url('../img/black.png');
+}
+.checkers--white {
+	background-image: url('../img/white.png');
+}
+.shadow {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 50px rgba(30,30,30,0.9);
+}
